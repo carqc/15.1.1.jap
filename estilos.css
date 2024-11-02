@@ -1,3 +1,22 @@
 a{
     color: black;
 }
+
+
+.multicolumn {
+    column-count: 3;    /* Cantidad de columnas */
+    column-gap: 20px; /* Espacio entre columnas */
+    text-align: justify;
+}
+
+@media (max-width: 991px) {
+    .multicolumn {
+        column-count: 2; /* Cambia a 2 columnas en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 540px) {
+    .multicolumn {
+        column-count: 1; /* Cambia a 1 columna en pantallas muy pequeñas */
+    }
+}
